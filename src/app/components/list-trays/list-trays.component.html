@@ -1,0 +1,22 @@
+<div class="container box float-end">
+    <ng-container *ngFor="let item of trays">
+        <div class="card row mx-1">
+            <div class="card-body">
+                <div class="row-md-12">
+                    <h2>Bandeja #</h2>
+                </div>
+            <div class="row-md-12">
+                    <h4 class="col-md-12 title">Día de Inicio</h4>
+                    <p class="col-md-12 text">Init day</p>
+                </div>
+                <div class="row-md-12">
+                    <h4 class="col-md-12 title">Día de Inicio</h4>
+                    <p class="col-md-12 text">Init day</p>
+                </div>
+                <div class="row-md-12">
+                    <button class="float-end" mat-raised-button mat-stroked-button color="primary"  [routerLink]="['/dashboard', item]" routerLinkActive="router-link-active" >Gráficas</button>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

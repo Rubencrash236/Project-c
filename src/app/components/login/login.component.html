@@ -1,0 +1,27 @@
+<div class="card-container">
+    <div class="center-card login-card row"> 
+        <div class="row mt-2">
+            <h2>Login</h2>
+        </div>
+        <form method="post" id="form">
+            <div class="row">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario" name="username" [(ngModel)]="user.username" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password" [(ngModel)]="user.password" required>
+                </div>
+            </div>
+            
+        </form>
+        <div class="row">
+            <div class="mb-3">
+                <button class="float-end" mat-raised-button mat-stroked-button color="primary"  (click)="login()">Login</button>
+            </div>
+        </div>
+    </div>
+</div> 

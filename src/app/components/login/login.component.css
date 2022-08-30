@@ -1,0 +1,20 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.center-card { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+
+.login-card{
+    box-shadow: 0px 0px 3px grey;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: x-large;
+}

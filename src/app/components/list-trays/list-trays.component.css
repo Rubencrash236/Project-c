@@ -1,0 +1,31 @@
+.box {
+    margin-top: 3rem;
+}
+
+.card {
+    box-shadow: 0px 0px 8px rgb(168, 168, 168);
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+
+.title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.text {
+    margin-top: 0;
+    margin-left: 0.3rem;
+    color: grey;
+}
+
+.wrapper {
+    /*background-color: green; /* for visualization purposes */
+    text-align: center;
+}
+
+.yourdiv {
+    background-color: red; /* for visualization purposes */
+    display: inline-block;
+}
