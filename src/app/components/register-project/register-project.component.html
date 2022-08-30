@@ -1,1 +1,40 @@
-<p>register-project works!</p>
+<div class="card-container">
+    <div class="center-card login-card row"> 
+        <div class="row mt-2">
+            <h2>Registrar un Proyecto</h2>
+        </div>
+        <form method="post" id="form">
+            <div class="row">
+                <div class="mb-3">
+                    <label for="projectName" class="form-label">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="projectName" placeholder="Nombre del Proyecto" name="projectName" [(ngModel)]="project.projectId" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="cultiveType" class="form-label">Tipo de cultivo</label>
+                    <input type="text" class="form-control" id="cultiveType" placeholder="Tipo de cultivo" name="cultiveType" [(ngModel)]="project.cultiveType" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="initDate" class="form-label">Fecha de Inicio</label>
+                    <input type="datetime" class="form-control" id="initDate" placeholder="" name="initDate" [(ngModel)]="project.initDate" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="trays" class="form-label">Bandejas</label>
+                    <select type="number" class="form-control" id="initDate" placeholder="bandeja(s)" name="trays" [(ngModel)]="project.trays" multiple>
+                        <option *ngFor="let tray of trays" [value]="tray">Bandeja #{{tray}}</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="mb-3">
+                <button class="float-end" mat-raised-button mat-stroked-button color="primary" >Crear</button>
+            </div>
+        </div>
+    </div>
+</div> 
