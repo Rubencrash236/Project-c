@@ -12,7 +12,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LineChartComponent } from './components/dashboard/charts/line-chart/line-chart.component';
 import { BarChartComponent } from './components/dashboard/charts/bar-chart/bar-chart.component';
 import { ListTraysComponent } from './components/list-trays/list-trays.component';
-import { LoginComponent} from './components/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { RegisterProjectComponent } from './components/register-project/register-project.component';
 // ***** End Components *****
 

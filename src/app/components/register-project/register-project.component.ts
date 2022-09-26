@@ -8,6 +8,7 @@ import Project from './models/project.model';
 })
 export class RegisterProjectComponent implements OnInit {
 
+  // this should be create tray 
   trays: any;
   project!: Project;
   constructor() { }

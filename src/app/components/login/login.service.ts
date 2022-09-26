@@ -7,6 +7,7 @@ import User from './models/user.model';
 })
 export class LoginService {
 
+  public url: string = "http://localhost:3000/api";
   private _user!: User;
   constructor(private router: Router) { }
 

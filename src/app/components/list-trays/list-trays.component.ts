@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ListTraysService } from './list-trays.service';
 
 @Component({
   selector: 'app-list-trays',
@@ -8,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class ListTraysComponent implements OnInit {
 
   trays: any;
-  constructor() { }
+  constructor(private trayService: ListTraysService, private router: Router) { }
 
   ngOnInit(): void {
-    this.trays = [1,2,3,4];
+    this.trayService.getAllTrays().subscribe(
+      response => {
+        this.trays = response;
+      }
+    );
   }
 }
